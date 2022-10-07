@@ -18,21 +18,24 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
+const LINKS = ['/sign-up', '/home', '/services', '/products']
+
 export const Button = ({
   children,
   type,
   onClick,
   buttonStyle,
-  buttonSize
+  buttonSize,
+  buttonLink
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
+  const checkLink = LINKS.includes(buttonLink) ? buttonLink : LINKS[0];
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    <Link to={`${checkLink}`} className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
