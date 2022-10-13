@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import Logo from './Stadt_Ludwgishafen_logo.png'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -27,10 +28,11 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
+
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+            <image src={Logo} className='logo-image' />
+            Stadt Ludwigshafen
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -38,7 +40,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                Startseite
               </Link>
             </li>
             <li className='nav-item'>
@@ -47,7 +49,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Über Uns
               </Link>
             </li>
             <li className='nav-item'>
@@ -56,7 +58,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Probleme Melden
               </Link>
             </li>
 
@@ -66,11 +68,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Mitarbeiter anmeldung
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>Mitarbeiter anmeldung </Button>}
         </div>
       </nav>
     </>
