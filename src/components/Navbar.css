@@ -18,10 +18,11 @@
   max-width: 1500px;
 }
 .logo-image{
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   justify-content: flex-start;
   display: flex;
+  margin-right: 32px;
 }
 .navbar-logo {
   color: #fff;
@@ -81,7 +82,10 @@
   .NavbarItems {
     position: relative;
   }
-
+  .logo-image{
+    width: 32px;
+    height: 32px;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
