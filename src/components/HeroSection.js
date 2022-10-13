@@ -7,8 +7,8 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>Service Portal</h1>
-      <p>Für das melden von fehlern in ihrer umgebung!
+      <h1>Willkommen in Ludwigshafen</h1>
+      <p>Ludwigshafen am Rhein [ˈlutvɪçsˌhafn̩ ʔam ʁaɪ̯n oder ˈluːtvɪks-] ist die größte Stadt der Pfalz, mit rund 172.000 Einwohnern (Stand 2021)[1] nach der Landeshauptstadt Mainz die zweitgrößte Stadt in Rheinland-Pfalz und nach Mannheim die zweitgrößte Stadt der Metropolregion Rhein-Neckar.
       </p>
       <div className='hero-btns'>
         <Button

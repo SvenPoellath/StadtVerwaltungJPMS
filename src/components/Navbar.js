@@ -31,7 +31,7 @@ function Navbar() {
 
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <image src={Logo} className='logo-image' />
+            <img src={Logo} className='logo-image' alt='Lu' />
             Stadt Ludwigshafen
           </Link>
           <div className='menu-icon' onClick={handleClick}>
