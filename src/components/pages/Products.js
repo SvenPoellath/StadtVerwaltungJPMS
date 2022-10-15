@@ -12,6 +12,7 @@ export default function Products() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--long'
+          buttonLink='/maps'
         >
           Defekt oder Schaden
         </Button>
@@ -19,6 +20,7 @@ export default function Products() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--long'
+          buttonLink='/maps'
         >
           Verunreinigung
         </Button>
@@ -26,6 +28,7 @@ export default function Products() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--long'
+          buttonLink='/maps'
         >
           Parkverstoß
         </Button>
